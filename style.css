@@ -166,12 +166,12 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
+  padding: 4vh 0;                  /* more balanced top/bottom padding */
+  min-height: 100vh;               /* full viewport height, expands if content needs */
+  margin: 0 auto;                  /* center horizontally */
+  max-width: 1200px;               /* prevent excessive stretching on large screens */
   box-sizing: border-box;
-  min-height: fit-content;
-  background-color: #0b1220; /* deep dark blue */
+  background-color: #0b1220;       /* deep dark blue */
   color: #ddd;
 }
 
