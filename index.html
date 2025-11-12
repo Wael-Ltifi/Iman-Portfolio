@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iman Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+  <img src="./assets/logo.png" alt="John Doe Logo" />
+</div>
+
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+    <img src="./assets/logo.png" alt="John Doe Logo" />
+  </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Salut ! Je suis</p>
+        <h1 class="title">Iman Yaakoubi</h1>
+        <p class="section__text__p2">Agent Commercial</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Télécharger CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p3">Qu'est-ce qu'un agent commercial ?</p>
+      <p class="section__text__p2">Un agent commercial est un professionnel qui représente des entreprises pour vendre leurs produits ou services. Il agit en tant qu'intermédiaire entre le vendeur et l'acheteur.</p>
+      <h1 class="title">Sur moi</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Expérience</h3>
+              <p>5+ ans <br />Development Commercial et analyse business</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. baccalauréat en Sciences Informatique <br />L.Sc. Licence en Droit</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+La relation client est un élément essentiel du métier d’agent commercial. La prospection commerciale constitue une étape clé pour acquérir de nouveaux clients.
+Les agents commerciaux doivent être immatriculés pour exercer légalement leur activité. Les techniques de vente sont indispensables au développement commercial et permettent à l’agent de maximiser ses résultats.
+Découvrez pourquoi collaborer avec moi est votre meilleur choix !
+Je connais parfaitement le marché local, ce qui me permet d’agir efficacement dans cet environnement concurrentiel. Faire appel aux services d’un agent commercial représente un atout majeur pour toute entreprise souhaitant s’implanter dans une zone géographique donnée. Cela permet d’optimiser le temps et les ressources du mandant.
+De plus, je peux tirer parti de mon vaste réseau de contacts afin de faciliter les échanges d’informations et de maximiser les opportunités d’affaires.
+Je vous invite à découvrir des stratégies efficaces pour élargir votre réseau et faire progresser votre carrière.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <h1 class="title">Expérience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Outils Numérique</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HubSpot CRM</h3>
+                  <p>Expert</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>WordPress</h3>
+                  <p>Expert</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>blog management</h3>
+                  <p>Intermédière</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Automation & integration</h3>
+                  <p>Basique</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Lead management & automation</h3>
+                  <p>Expert</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>prospection commerciale</h3>
+                  <p>Intermédière</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Soft Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Compétences relationnelles</h3>
+                  <p>Créativité dans les campagnes et résolution de problèmes</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Communication</h3>
+                  <p>Collaboration et communication au sein de l’équipe</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Développement personnel</h3>
+                  <p>Respect des délais et gestion multitâche</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Gestion des conflits</h3>
+                  <p>intelligence émotionnelle</p>
+                </div>
+              </article>
+            </div>
+          </div>
+                    <div class="details-container">
+            <h2 class="experience-sub-title">Compétences</h2>
+
+            <h5>Je vais mettre mes compétences numériques à votre service pour vous aider à trouver la clé de votre réussite dans le monde moderne
+
+    Marketing par e-mail pour attirer des clients dans le secteur d’activité du métier d'agent commercial. et automatisation : séquences HubSpot, tests A/B
+
+    Méta-publicités pour les missions de prospection de l'agent commercial dans son secteur géographique.
+
+    (Facebook et Instagram) : plateformes clés pour promouvoir des offres. ciblage, reciblage, optimisation du ROI pour la rémunération de l'agent commercial salarié.
+
+    Publicités LinkedIn : campagnes de marketing visant à améliorer la rémunération. génération de leads B2B
+
+    Google Ads/SEM pour augmenter l'activité commerciale. : configuration des mots clés pour améliorer la rémunération des commissions. et des campagnes
+
+    SEO : optimisation on-page et des backlinks
+
+    Web scraping (Python) : collecte de leads et analyse concurrentielle pour déterminer les missions de l'agent commercial.
+
+    Optimisation du tunnel de conversion pour maximiser la rémunération. : landing pages optimisées pour le métier d'agent commercial., optimisation des CTA dans le cadre d'un contrat.
+
+    Marketing de contenu et rédaction : publications LinkedIn, contenu d’e-mails pour soutenir les missions de l'agent commercial.
+
+    Analyse et rapport via des tableaux de bord KPI pour évaluer l'activité. pour une visualisation efficace des données, ce qui est essentiel pour un agent commercial.
+
+    Utilisation de Google Data Studio pour exercer le métier d’agent commercial. pour créer des rapports interactifs et personnalisés, facilitant ainsi le travail d'un agent commercial</h5>
+          </div>
+                    <div class="details-container">
+            <h2 class="experience-sub-title">Vente B2B</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Maîtriser l'Art de la Vente B2B</h3>
+                  <p>expert</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Génération de leads (B2B) </h3>
+                  <p>listes ciblées et prospection</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Relation client et communication</h3>
+                  <p> e-mails, appels, réunions</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Planification et coordination de projets</h3>
+                  <p>gestion d’équipe dans le secteur d’activité</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <h1 class="title">Projets</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <h1 class="title">Me contacter</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">iman@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Iman Yaakoubi. tout droit réservé.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
